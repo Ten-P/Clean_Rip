@@ -3,34 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <title>Ten-P blog
+        <title>          Ten-P blog
         </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            header{
+                color: green;
+            }
+        </style>
     </head>
     <body class="UI_body_Assistant"
     style="min-height: 100vh
     display: flex;
     flex-direction: column;
     ">
-       <header style="height: 150px;">
-           <h1>             Ten-P blog</h1>
+       <header>
+           <h1>Ten-P blog</h1>
            <nav>
                <ul>
-                   <li><a href="#">ホーム</a></li>
-                   <li><a href="#">ブログ一覧</a></li>
+                   <li><a href="#">ホーム（ブログ一覧）</a></li>
                </ul>
            </nav>
        </header>
     <div style="
     flex: 1;
     ">
-    </div>
-       <main style="flex: 1;">
+    
+    <nav> </nav>
+       <main>
            <article>
-               <header>
         　                <h1>
                           wiiからゲームイメージをiso形式で吸い出してみよう
                          </h1>
-                        </header>
                <p>
                    Wiiを改造する上でやってみたいことの中に、ゲームファイルの吸出しというものがあるだろう。
                    （少なくとも私はそうだった。）今回はClean Ripという素晴らしいツールを使ってゲームファイルを
@@ -42,7 +46,7 @@
                <p>・sdカード、もしくはFAT32かNTFSフォーマットされたUSB（いずれも5GB以上が必須）
                </p>
 
-               <h3>Clean Ripをダウンロードしよう。</h3>
+               <h2>Clean Ripをダウンロードしよう</h2>
                <p>
                    とにもかくにも、まずはClean Ripをダウンロードせねばならない。様々なサイトでダウンロードリンクが
                    貼られているが、もはやどれが本家サイトかわからないのはご了承いただきたい。
@@ -53,8 +57,9 @@
                <p>
                    ダウンロードしてzipファイルを解凍したら、中に入っているやつを下の画像のようにsdカードのルートに配置する。
                    pc作業はこれで終わり。次はwiiに移動する。
+                   <img src="https://cdn.discordapp.com/attachments/826733187975348258/827469710777647114/2021-03-30_2.png" width="100%" height="100%">
                </p>
-               <h4>実際に吸い出してみよう</h4>
+               <h2>実際に吸い出してみよう</h2>
                <p>
                    ここから先はsdカードでの吸い出し方で説明していくことにする。Wiiにsdカードを挿入。Home brew channelを起動後、
                    Clean Ripを起動する。
@@ -101,7 +106,29 @@
                <p>
                    100%に達して、成功していたら下のような表示が出てくる。Aボタンを押せば別のディスクの吸出しができ、Bボタンを押せばHome brew hcannel
                    に戻る。Wiiでの作業はこれで終わりである。完了まであと一息。
-                   
-               </p>
+                   <img src="https://cdn.discordapp.com/attachments/826733187975348258/826746917098749983/image0.jpg" width="100%" >
+                   <h2>分割されたisoを結合しよう</h2>
+                   <p>二層式以外の仏のディスクを、上でやってきたように吸い出せば、おそらくsdカードの中にはisoが二つに分割されて入っていることで
+                       あろう。（下の画像のように）
+                       <img src="https://cdn.discordapp.com/attachments/826733187975348258/827474307684237402/2021-04-02_2.png" width="100%" height="100%">
+                       これらは結合しなければ使いようがないので、結合せねばならんってことでconcatというツールを使ってisoの結合を行う。
+                       <a href="http://yk.tea-nifty.com/netdev/2009/05/isoconcat-3a5a.html">こちら</a>からconcatをダウンロードできるので、
+                       ダウンロードしたら早速concat.exeを開こう。下のような表示が出てくると思うので、追加のところを選んで、分割された2つのisoをぶちこもう。
+                       <img src="https://cdn.discordapp.com/attachments/826733187975348258/827474689713504286/2021-04-02.png" width="100%" height="100%">
+                       <img src="https://cdn.discordapp.com/attachments/826733187975348258/827475280331407380/2021-04-02_3.png" width="100%" height="100%">
+
+                   </p>
+                   <p>
+                       無事に二つのisoをぶち込むことができたら結合開始をクリック。すると、結合された、いわば完成形のisoをどこに出現させるかが出てくるので、
+                       どこか適当な場所に出現させよう。（個人的にはデスクトップが一番だとは思う。）
+                       結合が完了したら、下のような画像の表示が出てくる。（成功した場合）使えない可能性が高いと書いてあるが、実際は使えるのでご安心を。
+                   </p>
+                   <p>このisoファイルをどのように活用するかについては別の機会に説明しようかな。
+                       それではさようなら。
+                   </p>
        </main>
+       <aside> </aside>
+       </div>
+       <fooder> </fooder>広告収入くれ<fooder>
+       </body>
            </article>
