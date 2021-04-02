@@ -1,7 +1,10 @@
 body {
     margin: 0;
+    style="min-height: 100vh
+    display: flex;
+    flex-direction: column; 
 }
-header {
+header 
     height: 150px;
 } 
 div {
